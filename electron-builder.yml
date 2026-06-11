@@ -1,0 +1,18 @@
+appId: com.melodyflow.app
+productName: MelodyFlow
+directories:
+  output: release
+  buildResources: build
+files:
+  - main/**/*
+  - renderer/dist/**/*
+  - node_modules/**/*
+win:
+  target:
+    - target: nsis
+      arch:
+        - x64
+  icon: build/icon.ico
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true

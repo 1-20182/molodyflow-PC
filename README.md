@@ -2,6 +2,12 @@
 
 一款基于 Electron + React 构建的桌面音乐播放器，采用玻璃态 UI 设计风格。
 
+> ⚠️ 本软件仅供个人学习研究使用，音乐版权归各平台所有。
+
+## 核心技术
+
+本软件基于 [Meting-API](https://github.com/koomai/meting-api) 提供音乐数据支持。
+
 ## 功能特性
 
 - 音乐搜索（歌曲、专辑、歌手）
@@ -21,6 +27,7 @@
 - Vite 5.4.0
 - Zustand 5.0.14
 - Framer Motion 12.40.0
+- Meting-API (音乐数据源)
 
 ## 项目结构
 
@@ -31,7 +38,7 @@ desktop/
 │   ├── src/
 │   │   ├── components/ # UI 组件
 │   │   ├── pages/      # 页面
-│   │   ├── services/   # 服务层
+│   │   ├── services/   # 服务层 (基于 Meting-API)
 │   │   ├── store/      # 状态管理
 │   │   └── styles/     # 样式
 ├── package.json
@@ -62,3 +69,11 @@ pnpm build
 ## 许可证
 
 本项目采用 [GNU General Public License v3.0](LICENSE) 开源协议。
+
+```
+Copyright (C) 2024 MelodyFlow
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+```
